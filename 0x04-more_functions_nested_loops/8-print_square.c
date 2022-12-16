@@ -7,10 +7,10 @@
  *
  * Return: no return
  */
-
 void print_square(int size)
 {
 	int i, j;
+
 
 	for (i = 0; i < size; i++)
 	{
@@ -19,7 +19,7 @@ void print_square(int size)
 			_putchar(35);
 		}
 		if (i != size - 1)
-			-putchar('\n');
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
