@@ -1,8 +1,10 @@
 #include "main.h"
 
+
 /**
  * print_square - prints hashes squares
  * @size: size of the square
+ *
  * Return: no return
  */
 
