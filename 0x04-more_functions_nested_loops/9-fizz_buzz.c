@@ -18,7 +18,7 @@ int main(void)
 		}
 		else if (n % 3 == 0)
 		{
-			printf(" fizz")
+			printf(" fizz");
 		}
 		else if (n % 5 == 0)
 		{
