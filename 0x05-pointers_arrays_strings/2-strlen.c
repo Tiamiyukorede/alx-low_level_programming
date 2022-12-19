@@ -1,8 +1,8 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * _strlen - show the lenght of a string
- * @s: char to check the lenght of a string
+ * @s: char to check
  * Return: 0
  */
 int _strlen(char *s)
