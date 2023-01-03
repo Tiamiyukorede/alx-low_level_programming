@@ -1,20 +1,34 @@
 #include "main.h"
+
 /**
- * string_toupper - change lowercase to uppercase
- * @s:string
- * Return:char
+ * _strstr -  searches a string for any of a set of bytes.
+ *
+ * @haystack: pointer to string
+ * @needle: substring to be located
+ *
+ * Return: a pointer to the byte in string
  */
-char *string_toupper(char *s)
+
+char *_strstr(char *haystack, char *needle)
 {
+	char *or_haystack = haystack, *or_needle = needle;
 
-	int i;
-
-i = 0;
-	while (*(s + i))
+	while (*haystack)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-			*(s + i) -= 'a' - 'A';
-		i++;
+		while (*needle)
+		{
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
+		}
+		if (!*needle)
+		{
+			return (or_haystack);
+		}
+		needle = or_needle;
+		or_haystack++;
+		haystack = or_haystack;
 	}
-	return (s);
+	return (0);
 }
