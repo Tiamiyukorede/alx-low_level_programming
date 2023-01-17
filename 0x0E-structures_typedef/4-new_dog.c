@@ -52,4 +52,3 @@ char *_strcpy(char *dest, char *src)
  *
  * Return: pointer to the new dog (Success), NULL otherwise
  */
-
